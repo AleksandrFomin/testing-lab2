@@ -2,6 +2,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Tables {
+    public final static Map<Double, Double> systemMap = new HashMap<>();
     public final static Map<Double, Double> trigonomMap = new HashMap<>();
     public final static Map<Double, Double> logarithmMap = new HashMap<>();
     public final static Map<Double, Double> cosMap = new HashMap<>();
@@ -39,6 +40,32 @@ public class Tables {
         logarithmMap.put(0.71, 0.00946);
         logarithmMap.put(1.29, 0.00936);
         logarithmMap.put(1.88, 0.07354);
+
+
+        systemMap.put(-0.1, 8.20076);
+        systemMap.put(-0.6, 0.80787);
+        systemMap.put(-1.4, 5.71394);
+        systemMap.put(-1.7, -7.63231);
+        systemMap.put(-2.5, -0.09988);
+        systemMap.put(-3.0, 5.30002);
+        systemMap.put(-3.3, -8.78094);
+        systemMap.put(-3.5, -6.54937);
+        systemMap.put(-3.7, -11.29406);
+        systemMap.put(-3.9, 7.39122);
+        systemMap.put(-4.1, 0.34017);
+        systemMap.put(-4.5, -4.43679);
+        systemMap.put(-4.9, 5.24913);
+        systemMap.put(-5.3, 2.53838);
+        systemMap.put(-5.5, 6.67322);
+        systemMap.put(-5.8, -7.49205);
+        systemMap.put(-5.9, -6.34889);
+        systemMap.put(-6.1, -7.96246);
+        systemMap.put(0.13, -0.41809);
+        systemMap.put(0.26, -0.04809);
+        systemMap.put(0.39, 0.01485);
+        systemMap.put(0.71, 0.00946);
+        systemMap.put(1.29, 0.00936);
+        systemMap.put(1.88, 0.07354);
 
         cosMap.put(-0.1, 0.9950);
         cosMap.put(-0.6, 0.8253);

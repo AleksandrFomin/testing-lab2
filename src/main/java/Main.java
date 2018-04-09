@@ -1,10 +1,10 @@
-import Functions.SystemOfFunctions;
-import Functions.Trigonometric.Sin;
+import Functions.CSVLog;
+import Functions.Trigonometric.*;
 
 public class Main {
     public static void main(String[] args) {
         Sin sin = new Sin();
-        System.out.println(sin.compute(-3.0, 0.001));
-        System.out.println(Math.sin(-3.0));
+        Cos cos = new Cos(sin);
+        CSVLog.logModuleToCSV(cos, -10, 10, 0.5, 0.001);
     }
 }
