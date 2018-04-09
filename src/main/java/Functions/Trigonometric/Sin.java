@@ -19,6 +19,11 @@ public class Sin implements Computable {
             x = x + 2 * Math.PI;
         }
 
+        if(x<0 && x>-Math.PI){
+            x+=Math.PI;
+            minus = true;
+        }
+
         if (x > Math.PI && x <= Math.PI * 2) {
             x = 2 * Math.PI - x;
             minus = true;

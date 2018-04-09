@@ -12,6 +12,6 @@ public class Log10 implements Computable {
 
     @Override
     public double compute(double x, double accuracy) {
-        return ((ln.compute(x, accuracy)) / (ln.compute(10, accuracy)));
+        return ((ln.compute(x, accuracy)) / (ln.compute(10.0, accuracy)));
     }
 }
